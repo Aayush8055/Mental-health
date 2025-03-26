@@ -1,0 +1,471 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6c63ff;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f4f4f9;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  color: #6c63ff;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #555;
+}
+
+.hero-content .btn {
+  background-color: #6c63ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 4px 4px 5px grey;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 40px;
+  box-shadow: 10px 10px 15px grey;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.hero-image:hover img {
+  transform: scale(1.05); 
+  box-shadow: 15px 15px 20px grey; 
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #e0e0f8;
+}
+
+.about-image img {
+  width: 700px;
+  border-radius: 40px;
+  box-shadow: 10px 10px 15px grey;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.about-image:hover img {
+  transform: scale(1.05); 
+  box-shadow: 15px 15px 20px grey;
+}
+.about-content {
+  max-width: 50%;
+}
+
+.about-content h2 {
+  font-size: 28px;
+  color: #6c63ff;
+}
+
+.about-content p {
+  font-size: 16px;
+  color: #555;
+}
+/* Add this inside your styles.css file */
+
+/* For screens 768px wide or smaller (tablets and phones) */
+@media (max-width: 768px) {
+  /* Example styles for smaller screens */
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .navbar .nav-links {
+    margin-top: 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-image, .contact-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer .social-links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer .social-links a {
+    margin: 0 10px;
+  }
+}
+
+
+.ai-chatbot {
+  padding: 50px 20px;
+  background-color: #e0e0f8;
+  text-align: center;
+}
+
+.chatbot-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.chatbot-messages {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#chatbot-input {
+  width: calc(100% - 80px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#chatbot-send {
+  width: 70px;
+  padding: 10px;
+  background-color: #6c63ff;
+  color: white;
+  box-shadow: 5px 5px 4px grey;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#chatbot-send:hover {
+  background-color: #5752d6;
+}
+
+/* Mental Health Journal Section */
+.mental-health-journal {
+  padding: 50px 20px;
+  background-color: #f4f4f9;
+  text-align: center;
+}
+.mental-health-journal button{
+  box-shadow: 5px 5px 4px grey;
+}
+
+.journal-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+#journal-entry {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#journal-submit {
+  padding: 10px 20px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#journal-submit:hover {
+  background-color: #5752d6;
+}
+
+.journal-insights {
+  margin-top: 20px;
+  text-align: left;
+}
+
+
+.contact {  
+  margin: 15px;
+  padding: 5px;
+  text-align: center;
+  background-color: #d2d1fd;
+  text-align: center;
+  border-radius: 100px;
+  box-shadow: 5px 4px  10px rgb(130, 128, 134);
+}
+
+.contact h2 {
+  font-size: 30px;
+  color: #6c63ff;
+}
+
+.contact p {
+  font-size: 16px;
+  color: #555;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #aea4a4;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #6c63ff;
+  color: rgb(12, 2, 49);
+  padding: 10px 20px;
+  box-shadow: 4px 4px 5px grey;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #fff;
+}
+
+.contact-image img {
+  max-width: 45px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 4px 4px 3px #555;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-image:hover img {
+  .contact-image:hover img {
+    transform: scale(1.1);
+    box-shadow: 6px 6px 5px #555;
+  }
+  box-shadow: 6px 6px 5px #555;
+}
+
+/* Footer */
+.footer {
+  background-color: #2a032e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer .social-links {
+  margin-top: 10px;
+}
+
+.footer .social-links a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.footer .social-links a:hover {
+  color: #f0f0f0;
+}
+/* Therapy Modes Section */
+.therapy-modes {
+  padding: 50px 20px;
+  background-color: #e0e0f8;
+  text-align: center;
+}
+
+.therapy-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.therapy-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.therapy-btn {
+  padding: 10px 20px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.therapy-btn:hover {
+  background-color: #d8d8e6;
+}
+
+.therapy-guide {
+  text-align: left;
+}
+
+.therapy-steps {
+  margin-top: 20px;
+}
+
+.therapy-steps ol {
+  padding-left: 20px;
+}
+
+.therapy-steps li {
+  margin-bottom: 10px;
+}
+
+.therapy-info {
+  padding: 50px 20px;
+  background-color: #f4f4f9;
+  text-align: center;
+}
+
+.therapy-info h2 {
+  font-size: 35px;
+  color: #6c63ff;
+  margin-bottom: 20px;
+  
+}
+
+.therapy-info p {
+  font-size: 20px;
+  color: #5f5c5c;
+  max-width: 800px;
+  border-radius: 15px;;
+  margin: 0 auto 20px;
+  background-color:#fff ;
+  box-shadow: 1px 1px 5px blue;
+}
+
+.emergency-support {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.emergency-support h3 {
+  font-size: 28px;
+  color: #dc162a;
+  margin-bottom: 10px;
+}
+
+.emergency-support p {
+  background-color: #fff;
+  font-size: 20px;
+  color: #483838;
+  margin-bottom: 15px;
+}
+
+.emergency-support ul {
+  list-style: none;
+  padding: 0;
+}
+
+.emergency-support ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.emergency-support ul li strong {
+  color: #6c63ff;
+}
+
+.emergency-support ul li a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.emergency-support ul li a:hover {
+  text-decoration: underline;
+}

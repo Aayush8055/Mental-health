@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Supporter</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.jpg" alt="Mental Health Logo">
+      <span>Mental Health Supporter</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="chatbot.html">Chatbot</a></li>
+      <li><a href="#mental-health-journal">Journal</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Your Mental Health Matters</h1>
+      <p>We are here to support you every step of the way.</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+    <div class="hero-image">
+      <img src="hero.png" alt="Mental Health Hero Image">
+    </div>
+  </section>
+  
+  <section id="about" class="about">
+    <div class="about-image">
+      <img src="about.png" alt="About Mental Health">
+    </div>
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>We are dedicated to providing mental health support through personalized therapy, motivational guidance, and structured self-help strategies. Our goal is to help you feel empowered and supported.</p>
+    </div>
+  </section>
+
+
+  <section id="mental-health-journal" class="mental-health-journal">
+    <h2>Mental Health Journal</h2>
+    <p>Write daily entries and get AI-powered insights into your emotional well-being.</p>
+    <div class="journal-container">
+      <textarea id="journal-entry" placeholder="Write your thoughts here..."></textarea>
+      <button id="journal-submit">Submit</button>
+      <div id="journal-insights" class="journal-insights"></div>
+    </div>
+  </section>
+  
+  <section id="therapy-modes" class="therapy-modes">
+    <h2>Personalized Therapy Modes</h2>
+    <p>Choose a therapy mode and get structured self-help strategies.</p>
+    <div class="therapy-container">
+      <div class="therapy-options">
+        <button id="cbt-mode" class="therapy-btn">Cognitive Behavioral Therapy (CBT)</button>
+        <button id="mindfulness-mode" class="therapy-btn">Mindfulness</button>
+        <button id="journaling-mode" class="therapy-btn">Journaling</button>
+      </div>
+      <div id="therapy-guide" class="therapy-guide">
+        <h3 id="therapy-title">Select a Therapy Mode</h3>
+        <p id="therapy-description">Choose a mode to get started.</p>
+        <div id="therapy-steps" class="therapy-steps"></div>
+      </div>
+    </div>
+  </section>
+<section id="therapy-info" class="therapy-info">
+  <h2>About Therapy</h2>
+  <p>
+    Therapy is a powerful tool for improving mental health. It provides a safe space to explore your thoughts and feelings, develop coping strategies, and work towards personal growth. Whether you're dealing with anxiety, depression, stress, or other challenges, therapy can help you build resilience and find clarity. Remember, seeking help is a sign of strength, not weakness.
+  </p>
+  <div class="emergency-support">
+    <h3>Emergency Support</h3>
+    <p>
+      If you or someone you know is in crisis, please reach out to a mental health professional or contact a crisis hotline immediately. You are not alone, and help is available.
+    </p>
+    <ul>
+      <li><strong>National Suicide Prevention Lifeline:</strong> <a href="tel:1-800-273-TALK">1-800-273-TALK (8255)</a></li>
+      <li><strong>Crisis Text Line:</strong> Text "HELLO" to <a href="sms:741741">741741</a></li>
+      <li><strong>Emergency Services:</strong> Call <a href="tel:911">911</a> or visit your nearest emergency room.</li>
+    </ul>
+  </div>
+</section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need support, feel free to reach out.</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-image">
+      <img src="contact.png" alt="Contact Us">
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Mental Health Supporter. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
